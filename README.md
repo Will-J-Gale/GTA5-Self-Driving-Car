@@ -40,12 +40,12 @@ A Recurrent  CNN could be a future upgrade to combat this problem.
 
 ## Usage
 Recommended to use dual monitors
-1. Run GTA5 in windowed mode 1280x720
-2. Find a car and enable Hood Camera
-3. Enable mini map
-4. Create a destination waypoint on the map
-5. Download model weights from https://drive.google.com/open?id=1nyTTkGVF7DM1gmA-_RlkQaf-IZb8MDlP and place them in the same directory as GTA_Self_Driving_Car.py 
-5. Run GTA_Self_Driving_Car.py
+1. Download model weights from https://drive.google.com/open?id=1nyTTkGVF7DM1gmA-_RlkQaf-IZb8MDlP and place them in the same directory as GTA_Self_Driving_Car.py 
+2. Run GTA5 in windowed mode 1280x720
+3. Find a car and enable Hood Camera
+4. Enable mini map
+5. Create a destination waypoint on the map
+6. Run GTA_Self_Driving_Car.py
 
 ## The Model
 This model was trained using ~100,000 images with corresponding steering, brake and throttle commands.  
