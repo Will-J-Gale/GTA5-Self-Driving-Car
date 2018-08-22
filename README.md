@@ -9,7 +9,15 @@
 This project was inspired by https://github.com/Sentdex/pygta5  
 The aim was to make a slightly more realistic GTA5 self-driving car. 
 It should obey lane keeping, path following, 
-traffic speed, traffic lights and stop signs.  
+traffic speed, traffic lights and stop signs. 
+
+## The Model
+This model was trained using ~100,000 images with corresponding steering, brake and throttle commands.  
+The architecture was modelled after PilotNet by NVIDIA https://arxiv.org/abs/1604.07316  
+However, this network was modified to add three regression heads, one for each command.  
+The model was initially only trained using the steering command to learn features in the  
+convolution layers. After this, two more regression heads were added and only the remaining regression  
+layers were trained to create the full model.
 
 ## What the Model Learned
 * __Path Following__
@@ -46,11 +54,3 @@ Recommended to use dual monitors
 4. Enable mini map
 5. Create a destination waypoint on the map
 6. Run GTA_Self_Driving_Car.py
-
-## The Model
-This model was trained using ~100,000 images with corresponding steering, brake and throttle commands.  
-The architecture was modelled after PilotNet by NVIDIA https://arxiv.org/abs/1604.07316  
-However, this network was modified to add three regression heads, one for each command.  
-The model was initially only trained using the steering command to learn features in the  
-convolution layers. After two more regression heads were added and only the remaining regression  
-were trained to create the full model.
