@@ -1,9 +1,9 @@
 # GTA5-Self-Driving-car
 
 ## Long Distance Driving
-## ADD GIF OF LONG DISTANCE SELF DRIVING CAR HERE
+![alt text](https://github.com/Will-J-Gale/GTA5-Self-Driving-Car/blob/master/Images/LONG_DISTANCE_1.gif)  
 ## City Driving
-## ADD GIF OF CITY SELF DRIVING CAR HERE
+![alt text](https://github.com/Will-J-Gale/GTA5-Self-Driving-Car/blob/master/Images/CITY3.gif)  
 
 ## Inspiration
 This project was inspired by https://github.com/Sentdex/pygta5  
