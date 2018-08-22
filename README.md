@@ -38,13 +38,15 @@ A Recurrent  CNN could be a future upgrade to combat this problem.
    * GTA V Fov v1.35
    * Extended Camera Settings
    * Hood Camera
+   * Singleplayer Reveal Map
    * LeFix Speedometer 1.3.5 (Important)
 2. Python 3.6
 3. OpenCV
 4. Numpy
 5. Tensorflow GPU
 6. Keras
-7. vJoy
+7. x360ce (https://www.x360ce.com/)
+8. vJoy (http://vjoystick.sourceforge.net/site/)
 
 ## Usage
 Recommended to use dual monitors
