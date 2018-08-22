@@ -61,4 +61,5 @@ However, there is still a long way to go as other things need to be added such a
    * Object detection (Cars, people, signs etc)
    * Logical rules such as what to do at traffic lights/stop signs
    * OR use a Reccurent CNN for these tasks.  
+  
 Moreover, more data will help improve the model in the future.
