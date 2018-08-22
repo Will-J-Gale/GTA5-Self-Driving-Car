@@ -27,9 +27,6 @@ layers were trained to create the full model.
 * __Traffic Speed__
    * On the long distance demo, the model seems to maintain roughly 60mph, however this could be just mimicking the training data and not following any laws of the road. In the city, however, it does reach speeds faster than the training data went, which could be because there is more long distance data than city data.
 
-Traffic lights and stop signs are difficult to learn as they require some sort of "memory".   
-A Recurrent  CNN could be a future upgrade to combat this problem.
-
 ## Prerequisites
 1. GTA5 + Mods
    * Script Hook V
@@ -56,3 +53,12 @@ Recommended to use dual monitors
 4. Enable mini map
 5. Create a destination waypoint on the map
 6. Run GTA_Self_Driving_Car.py
+
+## Thoughts
+The model seemed to learn quite a lot from a relativly small dataset.   
+However, there is still a long way to go as other things need to be added such as
+   * Dedicated lane finding
+   * Object detection (Cars, people, signs etc)
+   * Logical rules such as what to do at traffic lights/stop signs
+   * OR use a Reccurent CNN for these tasks.
+Moreover, more data will help improve the model in the future.
