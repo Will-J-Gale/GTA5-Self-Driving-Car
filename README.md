@@ -7,17 +7,17 @@
 
 ## Inspiration
 This project was inspired by https://github.com/Sentdex/pygta5  
-The aim was to make a slightly more realistic GTA5 self-driving car,  
-that would obey lane keeping, path following, 
+The aim was to make a slightly more realistic GTA5 self-driving car. 
+It should obey lane keeping, path following, 
 traffic speed, traffic lights and stop signs.  
 
 ## What the Model Learned
 * __Path Following__
-   * As the demos show, the car seems to follow the purple path shown in the bottom left and i you run the model without picking a destination it does run much worse.
+   * As the demos show, the car seems to follow the purple path shown in the bottom left and i you run the model without picking a destination it does run much worse. 
 * __Lane keeping__ 
-   * It has learned to keep in lane to a certain extent, which can be seen best when making turns in the city. However, this is far from perfect. When driving on the motorway it tends to keep swapping lanes which might be an artefact of overtaking cars in the training data. For some reason it occasionally drove down the hard-shoulder which was not done in training.
+   * It has learned to keep in lane to a certain extent, which can be seen best when making turns in the city. However, this is far from perfect. When driving on the motorway it tends to keep swapping lanes which might be an artefact of overtaking cars in the training data. For some reason it occasionally drove down the hard-shoulder which was not done in training. Moreover,it manages to get back in the correct lane if it accidently goes in the other lane
 * __Traffic Speed__
-   * On the long distance demo, the model seems to maintain roughly 60mph, however this could be just mimicking the training data and not following any laws of the road.
+   * On the long distance demo, the model seems to maintain roughly 60mph, however this could be just mimicking the training data and not following any laws of the road. In the city, however, it does reach speeds faster than the training data went, which could be because there is more long distance data than city data.
 
 Traffic lights and stop signs are difficult to learn as they require some sort of "memory".   
 A Recurrent  CNN could be a future upgrade to combat this problem.
