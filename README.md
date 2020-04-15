@@ -67,8 +67,8 @@ Recommended to use dual monitors
 ## Training 
 To train the model, simply collect images of size 400x220 along with steering and throttle commands and train the model like any other convolutional neural network in keras.
 
-The images are the inputs to the network.
-The steering and throttle commands 
+The images are the inputs to the network.  
+The steering and throttle commands are the outputs.
 
 For more information on how to train neural networks generally visit:  
 https://www.youtube.com/watch?time_continue=1&v=wQ8BIBpya2k&feature=emb_logo
