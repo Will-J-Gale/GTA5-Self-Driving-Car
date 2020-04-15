@@ -17,7 +17,7 @@ and keep it's speed up.
 <img src="https://github.com/Will-J-Gale/GTA5-Self-Driving-Car/blob/master/Images/SelfDrivingModel.png" alt="drawing" width="200"/>
 
 This model was trained using ~80,000 images with corresponding steering and throttle commands.  
-The architecture was loosly modelled after PilotNet by NVIDIA https://arxiv.org/abs/1604.07316  
+The architecture was loosely  modelled after PilotNet by NVIDIA https://arxiv.org/abs/1604.07316  
 However, this network was modified to add two regression heads, one for each command.  
 The model was initially only trained using the steering command to learn features in the  
 convolution layers. After this, a second regression head was added and only the remaining regression  
@@ -27,6 +27,8 @@ layers were trained to create the full model.
 Two separate datasets were used for steering and throttle.
 This was because the distribution of the steering and throttle heavily favoured certain positions, 
 so the data was pruned to create a flatter distribution so the model will not overfit.
+When the steering data had a good distribution the throttle distribution was bad, and vice versa,
+hence training them separately.
 
 Steering Dataset Before    |  Steering Dataset After
 :-------------------------:|:-------------------------:
@@ -62,7 +64,7 @@ Recommended to use dual monitors
 4. Run GTA_Self_Driving_Car.py
 
 ## Thoughts
-The model seemed to learn quite a lot from a relativly small dataset.   
+The model seemed to learn quite a lot from a relatively small dataset.   
 However, there is still a long way to go as other things need to be added such as
    * Scene segmentation to give a sense of what is surrounding the car
    * Depth perception to give a sense of distance to surroundings
