@@ -62,6 +62,19 @@ Recommended to use dual monitors
 2. Run GTA5 in windowed mode 1280x720
 3. Find a car and enable Hood Camera (press 8)
 4. Run GTA_Self_Driving_Car.py
+5. Find a long road like a motorway or country road
+
+## Training 
+To train the model, simply collect images of size 400x220 along with steering and throttle commands and train the model like any other convolutional neural network in keras.
+
+The images are the inputs to the network.
+The steering and throttle commands 
+
+For more information on how to train neural networks generally visit:  
+https://www.youtube.com/watch?time_continue=1&v=wQ8BIBpya2k&feature=emb_logo
+
+For information on training networks with multiple outputs visit:  
+https://keras.io/getting-started/functional-api-guide/#multi-input-and-multi-output-models
 
 ## Thoughts
 The model seemed to learn quite a lot from a relatively small dataset.   
