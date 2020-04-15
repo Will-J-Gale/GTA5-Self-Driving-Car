@@ -5,6 +5,8 @@
 ## Driving Familiar Roads
 ![alt text](https://github.com/Will-J-Gale/GTA5-Self-Driving-Car/blob/master/Images/Driving_Familiar_roads.gif)  
 
+Images are at 2x speed to show more driving in a shorter time span.
+
 ## Inspiration
 This project was inspired by https://github.com/Sentdex/pygta5  
 The aim was to make a slightly more realistic GTA5 self-driving car. 
