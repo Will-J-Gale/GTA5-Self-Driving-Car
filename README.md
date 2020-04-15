@@ -9,7 +9,7 @@ Images are at 2x speed to show more driving in a shorter time span.
 
 ## Inspiration
 This project was inspired by https://github.com/Sentdex/pygta5  
-The aim was to make a slightly more realistic GTA5 self-driving car. 
+The aim was to make a slightly more realistic GTA5 self-driving car.  
 By utilizing imitation learning the model has learned to stay in lane 
 and keep it's speed up. 
 
